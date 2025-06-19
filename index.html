@@ -41,19 +41,44 @@
 
     <!-- Main Section -->
     <section class="mt-5">
-      <div class="min-h-screen bg-[#f4f7fe] p-6">
-        <!-- Main Grid: Left Panel + Right Panel -->
+      <div class="p-6">
         <div class="grid grid-cols-4 gap-6">
-          <!-- Left Main Section (Top + Cards) -->
-          <div class="col-span-3 bg-white border rounded-xl p-4 space-y-6">
-            <!-- Top Row (3 boxes) -->
+          <div
+            class="col-span-3 bg-white border rounded-xl p-4 space-y-6 shadow-sm"
+          >
+            <!-- Top Row -->
             <div class="grid grid-cols-4 gap-4 mb-6">
-              <div class="bg-white border rounded-xl h-24 col-span-1"></div>
-              <div class="bg-white border rounded-xl h-24 col-span-2"></div>
+              <div class="bg-[#F4F7FF] border rounded-xl h-24 col-span-1 p-4">
+                <div class="flex gap-2">
+                  <div class="p-2 rounded-full bg-white mt-3">
+                    <img
+                      class="bg-white w-5"
+                      src="/assets/checkbox.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="">
+                    <p>Task Assigned</p>
+                    <h1 class="text-3xl font-bold">05</h1>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white border rounded-xl h-24 col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8]"
+              >
+                <div class="flex gap-2 px-5">
+                  <div class="mt-2">
+                    <img class="w-20" src="/assets/board.png" alt="" />
+                  </div>
+                  <div class="mt-5 text-xl">
+                    <h1 class="">Discover Something New Today!</h1>
+                  </div>
+                </div>
+              </div>
               <div class="bg-white border rounded-xl h-24 col-span-1"></div>
             </div>
 
-            <!-- Cards Section (2 rows of 3 cards) -->
+            <!-- Cards Sections -->
             <div class="grid grid-cols-3 gap-4">
               <div class="border rounded-xl h-40"></div>
               <div class="border rounded-xl h-40"></div>
@@ -65,7 +90,7 @@
           </div>
 
           <!-- Right Activity Log Panel -->
-          <div class="bg-white border rounded-xl p-4 space-y-4">
+          <div class="bg-white border rounded-xl p-4 space-y-4 shadow-sm">
             <div class="border rounded h-10"></div>
             <div class="border rounded h-12"></div>
             <div class="border rounded h-12"></div>
