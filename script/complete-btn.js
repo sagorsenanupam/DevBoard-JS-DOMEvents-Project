@@ -11,5 +11,8 @@ for (let button of buttons) {
     // Addition and subtracting after clicking the button
     document.getElementById("taskcompleted").innerText = taskCompleted + 1;
     document.getElementById("taskassigned").innerText = taskAssigned - 1;
+
+    // Adding the information to the acitivty log
+    acitivtyLog("button");
   });
 }
