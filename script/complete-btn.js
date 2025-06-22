@@ -13,6 +13,7 @@ for (let button of buttons) {
     document.getElementById("taskassigned").innerText = taskAssigned - 1;
 
     // Adding the information to the acitivty log
-    acitivtyLog("button");
+
+    acitivtyLog(button);
   });
 }

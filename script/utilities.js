@@ -3,8 +3,10 @@ function assignedTask(id) {
 }
 
 function acitivtyLog(id) {
-  const text = id.parentElement.innerText;
-  //   console.log(text);
-  const log = document.getElementById("activity-log");
-  log.innerHTML += `<p>✅ Completed: ${text}</p>`;
+  const text = document.getElementById("activity-log").innerText;
+  const title = id.parentNode.parentNode.querySelector(".card-title").innerText;
+  document.getElementById("activity-log").innerHTML += `
+  <p>You have completed the task ${title} at that time</p>
+`;
 }
+gi;
