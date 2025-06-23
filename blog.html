@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog of DevBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .text-color {
+        color: #00303c;
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="px-30 bg-[#F4F7FF]">
+    <!-- Nav Bar -->
+    <section class="text-color pt-5" id="nav-bar ">
+      <div
+        class="flex justify-between items-center navbar bg-base-100 shadow-sm rounded-lg px-5"
+      >
+        <div class="flex gap-2">
+          <img class="w-10" src="/assets/logo.png" alt="" />
+          <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div
+          onclick="window.location.href='index.html';"
+          style="cursor: pointer"
+          class=""
+        >
+          <button id="" class="mt-3 btn btn-active btn-primary">
+            Back to desk
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <h1 class="text-center text-2xl text-black font-bold mt-5 mb-5">Blogs</h1>
+      <div class="border p-5 bg-white rounded-lg mb-5">
+        <h1 class="font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <hr
+          class="my-5"
+          style="border: none; border-top: 3px dashed #3752fd; opacity: 20%"
+        />
+        <p class="">
+          There are different ways to select an element in the document object
+          model. Given below:
+        </p>
+        <ol>
+          <li>document.getElementById("id") : Selects element by ID</li>
+          <li>
+            document.getElementsByClassName("class") : Selects elements by class
+          </li>
+          <li>
+            document.getElementsByTagName("tag") : Selects elements by tag name
+          </li>
+          <li>
+            document.querySelector("selector") : Selects the first match using
+            CSS selector
+          </li>
+          <li>
+            document.querySelectorAll("selector") : Selects all matches using
+            CSS selector
+          </li>
+        </ol>
+      </div>
+      <!-- Question 2 -->
+      <div class="border p-5 bg-white rounded-lg mb-5">
+        <h1 class="font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h1>
+        <hr
+          class="my-5"
+          style="border: none; border-top: 3px dashed #3752fd; opacity: 20%"
+        />
+        <p class="">
+          innerHTML returns HTML content including tags where innerText returns
+          the user interface visible texts. Lastly the textContent returns all
+          the text content including the hidden text also. it does not show us
+          the HTML tags.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
