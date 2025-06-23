@@ -8,10 +8,16 @@ for (let button of buttons) {
     const taskCompleted = returnValueByID("taskcompleted");
     const taskAssigned = returnValueByID("taskassigned");
 
-    // Addition and subtracting after clicking the button
-    document.getElementById("taskcompleted").innerText = taskCompleted + 1;
-    document.getElementById("taskassigned").innerText = taskAssigned - 1;
-
+    // Checking condition
+    if (taskAssigned === 1) {
+      alert("All tasks are completed successfully. Thank you");
+      document.getElementById("taskcompleted").innerText = taskCompleted + 1;
+      document.getElementById("taskassigned").innerText = taskAssigned - 1;
+    } else {
+      // Addition and subtracting after clicking the button
+      document.getElementById("taskcompleted").innerText = taskCompleted + 1;
+      document.getElementById("taskassigned").innerText = taskAssigned - 1;
+    }
     // Adding the information to the acitivty log
 
     acitivtyLog(button);
